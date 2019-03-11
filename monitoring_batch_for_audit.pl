@@ -5,6 +5,9 @@ use DBConf;
 use Mail::Mailer;
 use POSIX;
 
+##This script collect the history of DB user who retrieved our site user's information.
+#After that, each server manages receive an audit email automatically.
+
 while ( ($tns,$value) =  each %dbconf)
 {
  if ($tns eq 'HANOI'){
